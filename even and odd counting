@@ -1,0 +1,21 @@
+package Strings;
+import java.util.*;
+public class vowelsandcons {
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	String s=sc.nextLine();
+	int vcount=0;
+	int ccount=0;
+	for(int i=0;i<s.length();i++) {
+		char ch=s.charAt(i);
+		if(Character.isLetter(ch)) {
+        if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u') {
+        	vcount++;
+        }
+        else 
+        	ccount++;
+	}
+	}
+	System.out.println(vcount+","+ccount);
+}
+}
